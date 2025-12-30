@@ -34,6 +34,7 @@ const Skills = () => {
                 { name: "RockyLinux", icon: <FaLinux /> },
                 { name: "Proxmox", icon: <SiProxmox /> },
                 { name: "VMware", icon: <SiVmware /> },
+                { name: "Docker (Básico)", icon: <FaDocker /> },
                 { name: "Admin Servidores", icon: <FaServer /> },
             ]
         },

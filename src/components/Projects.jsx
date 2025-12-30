@@ -5,6 +5,15 @@ import './Projects.css';
 const Projects = () => {
     const projects = [
         {
+            title: "Mermis",
+            description: "Plataforma especializada en el control y rastreo de mermas para el sector gastronómico. Desarrollada en Nexaven para optimizar pérdidas operativas.",
+            tags: ["FastAPI", "Odoo", "Backend", "Python"],
+            demo: "https://app.mermis.site/",
+            landing: "https://www.mermis.site/",
+            private: true,
+            gradient: "linear-gradient(135deg, #11998e 0%, #38ef7d 100%)"
+        },
+        {
             title: "Sistema Control de Asistencia y Gestión Académica (SCGA)",
             description: "Plataforma integral para el control de asistencia y administración académica. Actualmente en fase de pruebas de calidad previa a producción.",
             tags: ["React", "Backend", "Python", "Vercel"],
@@ -51,8 +60,11 @@ const Projects = () => {
                                     {!project.private && (
                                         <a href={project.github} className="btn-icon" title="Ver Código"><FaGithub /> Código</a>
                                     )}
+                                    {project.landing && (
+                                        <a href={project.landing} className="btn-icon" target="_blank" rel="noreferrer" title="Ver Landing"><FaExternalLinkAlt /> Web</a>
+                                    )}
                                     {project.demo !== "#" && (
-                                        <a href={project.demo} className="btn-icon" title="Ver Demo"><FaExternalLinkAlt /> Demo</a>
+                                        <a href={project.demo} className="btn-icon" target="_blank" rel="noreferrer" title="Ver Aplicativo"><FaExternalLinkAlt /> App</a>
                                     )}
                                 </div>
                             </div>

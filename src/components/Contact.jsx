@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaEnvelope, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarkerAlt, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
@@ -18,18 +18,18 @@ const Contact = () => {
                         <div className="contact-details">
                             <div className="contact-item">
                                 <FaEnvelope className="c-icon" />
-                                <span>contacto@ejemplo.com</span>
+                                <span>ricarberri@gmail.com</span>
                             </div>
                             <div className="contact-item">
                                 <FaMapMarkerAlt className="c-icon" />
-                                <span>Remoto / Mundial</span>
+                                <span>Remoto / Presencial</span>
                             </div>
                         </div>
 
                         <div className="social-links">
-                            <a href="#" className="s-link"><FaGithub /></a>
-                            <a href="#" className="s-link"><FaLinkedin /></a>
-                            <a href="#" className="s-link"><FaTwitter /></a>
+                            <a href="https://github.com/Ricardo4680" className="s-link"><FaGithub /></a>
+                            <a href="https://www.linkedin.com/in/ricardo-berrios-999148320" className="s-link"><FaLinkedin /></a>
+                            <a href="https://wa.me/584160192099" className="s-link"><FaWhatsapp /></a>
                         </div>
                     </div>
 
